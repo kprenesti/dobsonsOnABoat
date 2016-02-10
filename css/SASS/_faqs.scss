@@ -1,0 +1,45 @@
+
+
+#wedFAQ {
+  margin: 50px 0;
+  border: solid 1px grey;
+  box-shadow: 0 0 1px grey;
+  border-radius: 3px;
+  h1 {
+    text-align: center;
+    font-style: $contFont;
+    color: $contColor;
+  }
+  p {
+    font-family: $contFont;
+  }
+}
+
+.faqContainer {
+  background-color: #FFFFFF;
+  padding: 10px;
+  //border-radius: 5px;
+  margin-bottom: 20px;
+     .question {
+      background-color: $lightPurple;
+      padding: 8px;
+      margin: 0;
+      border-radius: 5px;
+       cursor: pointer;
+    }  
+  .answer {
+    @extend .question;
+    background-color: #FFFFFF;
+    border-radius: 0 0 5px 5px;
+    display: none;
+   // margin-bottom: 10px;
+   // position:relative;
+   // top: -1px;
+    }
+  }
+
+ .qaHolder {
+    border: solid 1px $contColor;
+    border-radius: 5px;
+    margin-bottom: 10px;
+ }

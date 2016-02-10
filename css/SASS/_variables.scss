@@ -1,0 +1,25 @@
+$contColor: #333;
+$sand: #EDC17D;
+$script: 'Lobster', cursive;
+$contFont: 'Droid Sans', sans-serif;
+$darkTurq: #00777F;
+$lightTurq: rgb(96,207,230);
+$darkPurple: #C599CC;
+$lightPurple: #D0CEE3;
+$whitePurple: #E0E4EF;
+$whiteTurq: #D1E1E1;
+$panel: #FFFFFF;
+$coral: #F87984;
+@mixin flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin text-shadow{
+  text-shadow: 0 0 2px #000; /* horizontal-offset vertical-offset 'blur' colour */
+      -moz-text-shadow: 0 0 2px #000;
+      -webkit-text-shadow: 0 0 2px #000;
+}

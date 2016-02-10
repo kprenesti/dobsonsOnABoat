@@ -1,0 +1,116 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/*==================
+    GENERAL NAVBAR
+===================*/
+
+nav.navbar.navbar-default.navbar-static-top {
+  margin-bottom: 0;
+  background-color: transparent !important;
+  border: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-family: $contFont;
+  font-weight: bold;
+  color: $contColor;
+  }
+
+.navbar li:hover {
+    background-color: $lightTurq;
+}
+/*=================================
+      BUTTON AND COLLAPSED NAV
+===================================*/
+
+.navbar-default .navbar-toggle:focus{
+  background-color: $lightTurq;
+}
+.navbar-default .navbar-toggle:hover {
+  background-color: $lightTurq;
+}
+div.navbar-collapse.collapse.in {
+  background-color: $lightTurq;
+  color: $contFont;
+  a:hover {
+    background-color: mintcream;
+  }
+}
+
+
+/*==================
+  DROPDOWN MENU
+==================*/
+
+.dropdown-menu {
+  background-color: $lightTurq;
+}
+
+.dropdown-menu > li > a,
+.dropdown-menu:hover > li > a,
+.dropdown-menu:focus > li > a {
+  color: $contColor;
+}
+
+.navbar-default .navbar-nav > .open > a:active {
+  background-color: $lightTurq;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: $contColor;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:active {
+  background-color: mintcream;
+}
+
+.dropdown-menu > li > a,
+.dropdown-menu > li > a:focus, 
+.dropdown-menu > li > a:hover {
+  color: $contColor;
+}
+
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a:hover {
+  color: $contColor;
+  background-color: $lightTurq;
+  }
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: $contFont;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: $contColor;
+    background-color: mintcream;
+  }
+  
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: $contColor;
+    background-color: mintcream;
+  }
+  
+}
+/*=========================================
+    NAVBAR BRAND
+==========================================*/
+
+.navbar-header .navbar-brand {
+  color: $contColor;
+  font-weight: 600;
+  font-family: $contFont;
+}
+  
+.navbar-default .navbar-brand:hover {
+  color: $contColor;
+  background-color: $lightTurq;
+}

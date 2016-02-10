@@ -1,0 +1,138 @@
+body {
+    background-color: $lightTurq;
+    }
+
+.toTop {
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  right: 2%;
+  color: $contColor;
+  margin-top: 10px;
+
+}
+
+.clear {
+  clear:both;
+  margin:0;
+  padding:0;
+  display:none;
+}
+
+.intro-splash {
+  background: url(../img/magensBayWedding.jpg) center center no-repeat;
+  height: 110vh;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  top: -50px;
+  overflow-x: hidden;
+    h1 {
+      color: $darkTurq;
+      font-family: $script;
+      font-size: 200%;
+      //position: relative;
+      //top: 15vh;
+    }
+    .date {
+      font-family: $script;
+      font-size: 180%;
+    }
+  }
+
+.info-holder {
+  position: relative;
+  top: 12vh;
+  }
+
+h1.names {
+    font-family: $script;
+    color: $darkTurq;
+  }
+
+#countdown {
+  position: relative;
+  top: 20vh;
+  right: 1%;
+}
+
+.moreBtn {
+  position: relative;
+  top: 50vh;
+  right: 4%;
+  font-family: $contFont;
+  color: $darkTurq;
+  font-size: 150%;
+  padding: 7px 40px;
+  border: solid 2px $darkTurq;
+  border-radius: 5px;
+}
+.moreBtn:hover {
+  text-decoration: none;
+}
+
+#countdown{
+  position: relative;
+  top: 22vh;
+}
+#countdown .timeBubble {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: mintcream;
+  padding: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+    .holder{
+    float: left;
+    margin: 2px;
+  }
+}
+
+
+  .timeBubble .increment {
+    font-weight: bold;
+  }
+
+
+.number {
+    font-family: $script;
+    font-size: 180%;
+  }
+
+.panel.panel-default {
+  padding: 5px;
+  .panel-heading {
+    background-color: $lightPurple;
+    color: $contColor;
+   // font-weight: bold;
+    margin: 0 3px;
+  }
+}
+
+#events {
+  padding-bottom: 15px;
+}
+
+.intro h1 {
+  text-align: center;
+  font-family: $contFont;
+  color: $contColor;
+}
+
+.intro p {
+  margin-bottom: 30px;
+}
+
+#disqus_thread {
+  //border: solid 2px $contColor;
+  margin: 20px;
+  padding: 20px;
+}
+
+hr {
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 30px;
+}

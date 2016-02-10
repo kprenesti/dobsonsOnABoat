@@ -1,0 +1,49 @@
+#bgContAbout {
+  background: linear-gradient(to bottom, $lightTurq, mintcream, $whitePurple, $lightPurple, $lightTurq, mintcream, $whitePurple, $lightPurple);
+  //background-size: cover;
+  //overflow-x: scroll;  
+    h1{
+      font-family: $script;
+      color: $darkTurq;
+      text-align: center;
+      padding-top: 60px;
+    }
+  
+    p {
+      text-align: center;
+      font-weight: bold;
+      font-family: $contFont;
+      color: $contColor;
+      font-size: 1.1em;
+      margin-bottom: 10vh;
+      display: block;
+    }
+  } //End BGAboutCont
+
+    #thumbHolder {
+     // @include flex;
+      //flex-flow: wrap;
+      position: relative;
+      bottom: 30px;
+      margin: 0 auto;
+     // justify-content:space-around;
+      //overflow-x: hidden;
+      //overflow-y: scroll;
+      border: solid 5px white;
+      background-color: #222;
+      padding-top: 20px;
+    } //End ThumbHolder
+
+
+  a img {
+    width: 250px;
+    height: 200px;
+    border: solid 8px white;
+    z-index: 10;
+    text-align: center;
+    margin: 10px 7px;
+  }
+  
+
+  
+  

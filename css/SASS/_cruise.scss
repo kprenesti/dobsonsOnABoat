@@ -1,0 +1,108 @@
+.ocean {
+  background: url(img/oceanTexture.png);
+}
+
+#aboutEscapeBG {
+  height: 100vh;
+  position: relative;
+  top: -70px;
+  left:0;
+  right:0;
+  background: url(img/escape2.jpg) center center no-repeat;
+  background-size: cover;
+  border-bottom: solid 10px white;
+}
+
+.more {
+  display: block;
+  color: white;
+  font-family: $contFont;
+  background-color: $lightTurq;
+  font-weight: 500;
+  padding: 5px 10px;
+  font-size: 200%;
+  margin-top: 120%;
+  text-align: center;
+  border: solid 4px white;
+}
+
+.more:hover {
+    text-decoration: none;
+    //background-color: $darkTurq;
+    color: white;
+  }
+
+#aboutEscape h1 {
+  font-family: $contFont;
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.cruise1 {
+  background-color: $panel;
+  border: solid 2px $darkTurq;
+  padding: 30px 20px;
+  width: 100%;
+  font-family: $contFont;
+  h3{
+    //font-weight: bold;
+    font-family: $contFont;
+    color: $darkTurq;
+    //text-align: center;
+    line-height: 1.5;
+  }
+}
+
+h3.sailingWhen {
+    text-align:center;
+  }
+.quote {
+  font-family: $contFont;
+  color: $contColor;
+  font-size: 150%;
+  line-height: 1.5;
+  margin:0 auto;
+  width: 80%;
+  text-align: center;
+  margin-top: 20px;
+  }
+
+.author{
+  display:inline-block;
+  float: right;
+  padding-top: 10px;
+  position: relative;
+  right: 30px;
+  font-family: $contFont;
+  }
+
+.entertainment {
+  margin-bottom: 10px;
+}
+
+#packList ul li {
+  margin-bottom: 5px;
+  font-family: $contFont;
+  color: $contColor;
+}
+
+.bor-left {
+  border-left: 1px solid $contColor;
+  padding-left: 20px;
+}
+
+footer {
+  // position: fixed;
+  // bottom: 0;
+  //height: 40px;
+  font-family: $contFont;
+  color: $darkTurq;
+  padding: 20px;
+  a {
+    color: $darkTurq;
+    .sm {
+      padding: 5px;
+    }
+  }
+}
