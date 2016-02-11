@@ -7,7 +7,6 @@ body {
     GENERAL NAVBAR
 ===================*/
 nav.navbar.navbar-default.navbar-static-top {
-  margin-bottom: 0;
   background-color: transparent !important;
   border: none; }
 
@@ -269,7 +268,7 @@ a img {
   margin-bottom: 10px; }
 
 .ocean {
-  background: url(img/oceanTexture.png); }
+  background: url("../img/oceanTexture.png"); }
 
 #aboutEscapeBG {
   height: 100vh;
@@ -277,7 +276,7 @@ a img {
   top: -70px;
   left: 0;
   right: 0;
-  background: url(img/escape2.jpg) center center no-repeat;
+  background: url("../img/escape2.jpg") center center no-repeat;
   background-size: cover;
   border-bottom: solid 10px white; }
 
@@ -313,6 +312,12 @@ a img {
     font-family: "Droid Sans", sans-serif;
     color: #00777F;
     line-height: 1.5; }
+  .cruise1 #cruise-itin h1 {
+    text-align: center;
+    font-family: "Droid Sans", sans-serif; }
+  .cruise1 #cruise-itin #tabs-panel {
+    background-color: #E0E4EF;
+    padding: 20px; }
 
 h3.sailingWhen {
   text-align: center; }

@@ -8,7 +8,7 @@ body{
 ===================*/
 
 nav.navbar.navbar-default.navbar-static-top {
-  margin-bottom: 0;
+  //margin-bottom: 0;
   background-color: transparent !important;
   border: none;
 }
@@ -70,13 +70,13 @@ div.navbar-collapse.collapse.in {
 }
 
 .dropdown-menu > li > a,
-.dropdown-menu > li > a:focus, 
+.dropdown-menu > li > a:focus,
 .dropdown-menu > li > a:hover {
   color: $contColor;
 }
 
-.navbar-default .navbar-nav>.open>a, 
-.navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
 .navbar-default .navbar-nav>.open>a:hover {
   color: $contColor;
   background-color: $lightTurq;
@@ -91,14 +91,14 @@ div.navbar-collapse.collapse.in {
     color: $contColor;
     background-color: mintcream;
   }
-  
+
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: $contColor;
     background-color: mintcream;
   }
-  
+
 }
 /*=========================================
     NAVBAR BRAND
@@ -109,7 +109,7 @@ div.navbar-collapse.collapse.in {
   font-weight: 600;
   font-family: $contFont;
 }
-  
+
 .navbar-default .navbar-brand:hover {
   color: $contColor;
   background-color: $lightTurq;

@@ -1,5 +1,5 @@
 .ocean {
-  background: url(img/oceanTexture.png);
+  background: url('../img/oceanTexture.png');
 }
 
 #aboutEscapeBG {
@@ -8,7 +8,7 @@
   top: -70px;
   left:0;
   right:0;
-  background: url(img/escape2.jpg) center center no-repeat;
+  background: url('../img/escape2.jpg') center center no-repeat;
   background-size: cover;
   border-bottom: solid 10px white;
 }
@@ -51,6 +51,16 @@
     color: $darkTurq;
     //text-align: center;
     line-height: 1.5;
+  }
+  #cruise-itin {
+    h1 {
+      text-align: center;
+      font-family: $contFont;
+    }
+    #tabs-panel {
+      background-color: $whitePurple;
+      padding: 20px;
+    }
   }
 }
 
