@@ -1,33 +1,42 @@
 #registry {
-  max-height: 100vh;
-}
-
-.giftPic {
-  background: url("../img/wedding-gifts.jpg") center center no-repeat;
+  min-height: 100vh;
+  background-image: url('../img/wedding-gifts.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  top: -70px;
-  h1{
-    font-family: $script;
-    color: $darkTurq;
-    font-weight: bold;
-    font-size: 375%;
-    text-align: center;
-    position: relative;
-    top: 40%;
-    text-shadow: 0 0 5px mintcream;
-    }
-  p{
-    position: relative;
-    font-family: $contFont;
-    font-weight: bold;
-    font-size: 200%;
-    top: 40%;
-    width: 50%;
-    text-align: center;
-    margin: 0 auto;
-    text-shadow: 0 0 5px white;
+  footer{
+    position: fixed;
+    bottom: 0;
   }
 }
+
+  .giftPic{
+    h1.header{
+      font-family: $script;
+      text-align: center;
+    }
+    p {
+      font-family: $contFont;
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+    .vendorList {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      background-color: $whiteTurq;
+      border-radius: 5px;
+      list-style-position: inside;
+      list-style-type: none;
+      overflow: hidden;
+      li {
+        // float:left;
+        padding: 20px;
+        img {
+          border-radius: 20px;
+          height: 11em;
+        }
+      } //end li
+    } //end vendorList
+  } //end giftPic
