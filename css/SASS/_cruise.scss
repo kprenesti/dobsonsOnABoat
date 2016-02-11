@@ -1,5 +1,5 @@
 .ocean {
-  background: url('../img/oceanTexture.png');
+  background: url(img/oceanTexture.png);
 }
 
 #aboutEscapeBG {
@@ -51,16 +51,6 @@
     color: $darkTurq;
     //text-align: center;
     line-height: 1.5;
-  }
-  #cruise-itin {
-    h1 {
-      text-align: center;
-      font-family: $contFont;
-    }
-    #tabs-panel {
-      background-color: $whitePurple;
-      padding: 20px;
-    }
   }
 }
 
