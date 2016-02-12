@@ -261,6 +261,10 @@ a img {
     background-color: #FFFFFF;
     border-radius: 0 0 5px 5px;
     display: none; }
+    .faqContainer .answer ul {
+      font-weight: bold; }
+      .faqContainer .answer ul li {
+        font-weight: normal; }
 
 .qaHolder {
   border: solid 1px #333;
@@ -268,7 +272,7 @@ a img {
   margin-bottom: 10px; }
 
 .ocean {
-  background: url("../img/oceanTexture.png"); }
+  background: url(img/oceanTexture.png); }
 
 #aboutEscapeBG {
   height: 100vh;
@@ -312,12 +316,6 @@ a img {
     font-family: "Droid Sans", sans-serif;
     color: #00777F;
     line-height: 1.5; }
-  .cruise1 #cruise-itin h1 {
-    text-align: center;
-    font-family: "Droid Sans", sans-serif; }
-  .cruise1 #cruise-itin #tabs-panel {
-    background-color: #E0E4EF;
-    padding: 20px; }
 
 h3.sailingWhen {
   text-align: center; }
