@@ -4,7 +4,7 @@ body {
 
 .toTop {
   display: block;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 2%;
   color: $contColor;
@@ -20,7 +20,7 @@ body {
 }
 
 .intro-splash {
-  background: url(../img/magensBayWedding.jpg) center center no-repeat;
+  background: url('../img/magensBayWedding.jpg') center center no-repeat;
   height: 110vh;
   background-size: cover;
   text-align: center;
