@@ -4,7 +4,7 @@ $(document).ready(function(){
       var panelToShow = $(this).attr('rel');
       $('.tab.active').removeClass('active');
       $(this).addClass('active');
-      $('.panel.active').removeClass('active');      $('#'+panelToShow).addClass('active');
+      $('#allPanels .panel.active').removeClass('active');      $('#'+panelToShow).addClass('active');
     }); //end click
 
 }); //end ready

@@ -39,7 +39,7 @@ margin: 0;
   display: none;
 }
 
-.panel.active {
+#allPanels .panel.active {
   display: block;
   background-color: $lightPurple;
   padding: 20px;
