@@ -1,5 +1,6 @@
 #registry {
   min-height: 100vh;
+<<<<<<< HEAD
   background-image: url('../img/wedding-gifts.jpg');
   background-position: center center;
   background-repeat: no-repeat;
@@ -40,3 +41,45 @@
       } //end li
     } //end vendorList
   } //end giftPic
+=======
+  background-image: url("../img/wedding-gifts.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  footer {
+    position: fixed;
+    bottom: 0;
+    }
+  } //end #registry
+
+.giftPic h1.header {
+  font-family: "Lobster", cursive;
+  text-align: center; }
+.giftPic p {
+  font-family: "Droid Sans", sans-serif;
+  font-size: 1.2em;
+  font-weight: 600; }
+.giftPic .vendorList {
+  background-color: $lightPurple;
+  padding: 20px;
+  > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    list-style-position: inside;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    li {
+      padding: 20px;
+      img {
+        border-radius: 20px;
+        height: 11em;
+      } //end img
+    } //end li
+  } //end ul
+} //end .giftPic .vendorList
+>>>>>>> master

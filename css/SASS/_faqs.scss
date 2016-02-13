@@ -26,7 +26,7 @@
       margin: 0;
       border-radius: 5px;
        cursor: pointer;
-    }  
+    }
   .answer {
     @extend .question;
     background-color: #FFFFFF;
@@ -35,6 +35,12 @@
    // margin-bottom: 10px;
    // position:relative;
    // top: -1px;
+    ul {
+      font-weight: bold;
+      li {
+        font-weight: normal;
+      }
+    }
     }
   }
 

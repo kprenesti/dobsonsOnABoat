@@ -5,7 +5,7 @@ body {
 .toTop {
   display: block;
   position: absolute;
-  bottom: 1px;
+  bottom: 0;
   right: 2%;
   color: $contColor;
   margin-top: 10px;
@@ -50,12 +50,6 @@ h1.names {
     color: $darkTurq;
   }
 
-#countdown {
-  position: relative;
-  top: 20vh;
-  right: 1%;
-}
-
 .moreBtn {
   position: relative;
   top: 50vh;
@@ -71,10 +65,12 @@ h1.names {
   text-decoration: none;
 }
 
-#countdown{
+#countdown {
   position: relative;
-  top: 22vh;
+  top: 35vh;
+  right: 1%;
 }
+
 #countdown .timeBubble {
   display: flex;
   flex-direction: row;

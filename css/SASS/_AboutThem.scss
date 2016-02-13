@@ -1,14 +1,14 @@
 #bgContAbout {
   background: linear-gradient(to bottom, $lightTurq, mintcream, $whitePurple, $lightPurple, $lightTurq, mintcream, $whitePurple, $lightPurple);
   //background-size: cover;
-  //overflow-x: scroll;  
+  //overflow-x: scroll;
     h1{
       font-family: $script;
       color: $darkTurq;
       text-align: center;
       padding-top: 60px;
     }
-  
+
     p {
       text-align: center;
       font-weight: bold;
@@ -21,17 +21,14 @@
   } //End BGAboutCont
 
     #thumbHolder {
-     // @include flex;
-      //flex-flow: wrap;
-      position: relative;
-      bottom: 30px;
-      margin: 0 auto;
-     // justify-content:space-around;
-      //overflow-x: hidden;
-      //overflow-y: scroll;
-      border: solid 5px white;
-      background-color: #222;
-      padding-top: 20px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    margin: 0 10%;
+    background-color: #222;
+    padding: 20px;
     } //End ThumbHolder
 
 
@@ -43,7 +40,3 @@
     text-align: center;
     margin: 10px 7px;
   }
-  
-
-  
-  
