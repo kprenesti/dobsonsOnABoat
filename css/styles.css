@@ -7,6 +7,7 @@ body {
     GENERAL NAVBAR
 ===================*/
 nav.navbar.navbar-default.navbar-static-top {
+  margin-bottom: 0;
   background-color: transparent !important;
   border: none; }
 
