@@ -7,6 +7,7 @@ body {
     GENERAL NAVBAR
 ===================*/
 nav.navbar.navbar-default.navbar-static-top {
+  margin-bottom: 0;
   background-color: transparent !important;
   border: none; }
 
@@ -261,10 +262,6 @@ a img {
     background-color: #FFFFFF;
     border-radius: 0 0 5px 5px;
     display: none; }
-    .faqContainer .answer ul {
-      font-weight: bold; }
-      .faqContainer .answer ul li {
-        font-weight: normal; }
 
 .qaHolder {
   border: solid 1px #333;
@@ -280,7 +277,7 @@ a img {
   top: -70px;
   left: 0;
   right: 0;
-  background: url("../img/escape2.jpg") center center no-repeat;
+  background: url('../img/escape2.jpg') center center no-repeat;
   background-size: cover;
   border-bottom: solid 10px white; }
 
@@ -359,54 +356,6 @@ footer {
     footer a .sm {
       padding: 5px; }
 
-#tabsList {
-  width: 100%;
-  padding: 0;
-  margin: 0; }
-  #tabsList > .allTabs {
-    list-style-position: inside;
-    list-style-type: none;
-    overflow: hidden;
-    padding: 0;
-    margin: 0; }
-    #tabsList > .allTabs > .tab {
-      display: block;
-      float: left;
-      background-color: #E0E4EF;
-      border: 1px solid grey;
-      border-radius: 5px 5px 0 0;
-      padding: 10px; }
-      #tabsList > .allTabs > .tab.active {
-        background-color: #D0CEE3; }
-        #tabsList > .allTabs > .tab.active a {
-          font-weight: bold; }
-      #tabsList > .allTabs > .tab a {
-        text-decoration: none;
-        color: #333;
-        width: 100%; }
-
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
-  background-color: #E0E4EF; }
-
-.panel {
-  display: none; }
-
-.panel.active {
-  display: block;
-  background-color: #D0CEE3;
-  padding: 20px;
-  border: 1px solid #333;
-  border-radius: 0 0 4px 4px;
-  overflow: hidden; }
-  .panel.active p, .panel.active a, .panel.active li {
-    font-size: 1.2em; }
-  .panel.active .floater {
-    float: left;
-    width: 49%;
-    padding: 5px; }
-    .panel.active .floater > h2:first-child {
-      margin-top: 0 !important; }
-
 #registry {
   min-height: 100vh;
   background-image: url("../img/wedding-gifts.jpg");
@@ -420,30 +369,24 @@ footer {
 .giftPic h1.header {
   font-family: "Lobster", cursive;
   text-align: center; }
-
 .giftPic p {
   font-family: "Droid Sans", sans-serif;
   font-size: 1.2em;
   font-weight: 600; }
-
 .giftPic .vendorList {
-  background-color: #D0CEE3;
-  padding: 20px; }
-  .giftPic .vendorList > ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    list-style-position: inside;
-    list-style-type: none;
-    overflow: hidden;
-    padding: 0;
-    margin: 0; }
-    .giftPic .vendorList > ul li {
-      padding: 20px; }
-      .giftPic .vendorList > ul li img {
-        border-radius: 20px;
-        height: 11em; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #D1E1E1;
+  border-radius: 5px;
+  list-style-position: inside;
+  list-style-type: none;
+  overflow: hidden; }
+  .giftPic .vendorList li {
+    padding: 20px; }
+    .giftPic .vendorList li img {
+      border-radius: 20px;
+      height: 11em; }
 
 /*# sourceMappingURL=styles.css.map */
