@@ -1,77 +1,448 @@
-/*
-Error: Invalid CSS after "...kground-image: ": expected "{", was "url('../img/wed..."
-        on line 4 of css/SASS/_registry.scss
-        from line 10 of css/SASS/styles.scss
+@import url(http://fonts.googleapis.com/css?family=Lobster|Droid+Sans:400,700);
+body {
+  margin: 0;
+  padding: 0; }
 
-1: #registry {
-2:   min-height: 100vh;
-3: <<<<<<< HEAD
-4:   background-image: url('../img/wedding-gifts.jpg');
-5:   background-position: center center;
-6:   background-repeat: no-repeat;
-7:   background-size: cover;
-8:   footer{
-9:     position: fixed;
+/*==================
+    GENERAL NAVBAR
+===================*/
+nav.navbar.navbar-default.navbar-static-top {
+  margin-bottom: 0;
+  background-color: transparent !important;
+  border: none; }
 
-Backtrace:
-css/SASS/_registry.scss:4
-css/SASS/styles.scss:10
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/scss/parser.rb:1181:in `expected'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/scss/parser.rb:1115:in `expected'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/scss/parser.rb:1110:in `tok!'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/scss/parser.rb:655:in `block'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/scss/parser.rb:726:in `declaration_or_ruleset'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/scss/parser.rb:675:in `block_child'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/scss/parser.rb:667:in `block_contents'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/scss/parser.rb:656:in `block'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/scss/parser.rb:650:in `ruleset'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/scss/parser.rb:674:in `block_child'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/scss/parser.rb:664:in `block_contents'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/scss/parser.rb:126:in `stylesheet'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/scss/parser.rb:42:in `parse'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/engine.rb:403:in `_to_tree'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/engine.rb:309:in `to_tree'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:324:in `block in visit_import'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/stack.rb:88:in `block in with_import'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/stack.rb:88:in `with_import'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/tree/root_node.rb:36:in `css_tree'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/engine.rb:295:in `render_with_sourcemap'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:209:in `each'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/vendor/listen/lib/listen/listener.rb:252:in `call'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/var/lib/gems/1.9.1/gems/sass-3.4.20/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...kground-image: \": expected \"{\", was \"url('../img/wed...\"\A         on line 4 of css/SASS/_registry.scss\A         from line 10 of css/SASS/styles.scss\A \A 1: #registry {\A 2:   min-height: 100vh;\A 3: <<<<<<< HEAD\A 4:   background-image: url('../img/wedding-gifts.jpg');\A 5:   background-position: center center;\A 6:   background-repeat: no-repeat;\A 7:   background-size: cover;\A 8:   footer{\A 9:     position: fixed;"; }
+.navbar-default .navbar-nav > li > a {
+  font-family: "Droid Sans", sans-serif;
+  font-weight: bold;
+  color: #333; }
+
+.navbar li:hover {
+  background-color: #60cfe6; }
+
+/*=================================
+      BUTTON AND COLLAPSED NAV
+===================================*/
+.navbar-default .navbar-toggle:focus {
+  background-color: #60cfe6; }
+
+.navbar-default .navbar-toggle:hover {
+  background-color: #60cfe6; }
+
+div.navbar-collapse.collapse.in {
+  background-color: #60cfe6;
+  color: "Droid Sans", sans-serif; }
+  div.navbar-collapse.collapse.in a:hover {
+    background-color: mintcream; }
+
+/*==================
+  DROPDOWN MENU
+==================*/
+.dropdown-menu {
+  background-color: #60cfe6; }
+
+.dropdown-menu > li > a,
+.dropdown-menu:hover > li > a,
+.dropdown-menu:focus > li > a {
+  color: #333; }
+
+.navbar-default .navbar-nav > .open > a:active {
+  background-color: #60cfe6; }
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: #333;
+  font-weight: bold; }
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:active {
+  background-color: mintcream; }
+
+.dropdown-menu > li > a,
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  color: #333; }
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  color: #333;
+  background-color: #60cfe6; }
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: "Droid Sans", sans-serif; }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: mintcream; }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #333;
+    background-color: mintcream; } }
+/*=========================================
+    NAVBAR BRAND
+==========================================*/
+.navbar-header .navbar-brand {
+  color: #333;
+  font-weight: 600;
+  font-family: "Droid Sans", sans-serif; }
+
+.navbar-default .navbar-brand:hover {
+  color: #333;
+  background-color: #60cfe6; }
+
+body {
+  background-color: #60cfe6; }
+
+.toTop {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 2%;
+  color: #333;
+  margin-top: 10px; }
+
+.clear {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  display: none; }
+
+.intro-splash {
+  background: url(../img/magensBayWedding.jpg) center center no-repeat;
+  height: 110vh;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  top: -50px;
+  overflow-x: hidden; }
+  .intro-splash h1 {
+    color: #00777F;
+    font-family: "Lobster", cursive;
+    font-size: 200%; }
+  .intro-splash .date {
+    font-family: "Lobster", cursive;
+    font-size: 180%; }
+
+.info-holder {
+  position: relative;
+  top: 12vh; }
+
+h1.names {
+  font-family: "Lobster", cursive;
+  color: #00777F; }
+
+.moreBtn {
+  position: relative;
+  top: 50vh;
+  right: 4%;
+  font-family: "Droid Sans", sans-serif;
+  color: #00777F;
+  font-size: 150%;
+  padding: 7px 40px;
+  border: solid 2px #00777F;
+  border-radius: 5px; }
+
+.moreBtn:hover {
+  text-decoration: none; }
+
+#countdown {
+  position: relative;
+  top: 35vh;
+  right: 1%; }
+
+#countdown .timeBubble {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: mintcream;
+  padding: 5px;
+  border-radius: 5px;
+  overflow: hidden; }
+  #countdown .timeBubble .holder {
+    float: left;
+    margin: 2px; }
+
+.timeBubble .increment {
+  font-weight: bold; }
+
+.number {
+  font-family: "Lobster", cursive;
+  font-size: 180%; }
+
+.panel.panel-default {
+  padding: 5px; }
+  .panel.panel-default .panel-heading {
+    background-color: #D0CEE3;
+    color: #333;
+    margin: 0 3px; }
+
+#events {
+  padding-bottom: 15px; }
+
+.intro h1 {
+  text-align: center;
+  font-family: "Droid Sans", sans-serif;
+  color: #333; }
+
+.intro p {
+  margin-bottom: 30px; }
+
+#disqus_thread {
+  margin: 20px;
+  padding: 20px; }
+
+hr {
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 30px; }
+
+#bgContAbout {
+  background: linear-gradient(to bottom, #60cfe6, mintcream, #E0E4EF, #D0CEE3, #60cfe6, mintcream, #E0E4EF, #D0CEE3); }
+  #bgContAbout h1 {
+    font-family: "Lobster", cursive;
+    color: #00777F;
+    text-align: center;
+    padding-top: 60px; }
+  #bgContAbout p {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Droid Sans", sans-serif;
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 10vh;
+    display: block; }
+
+#thumbHolder {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  margin: 0 10%;
+  background-color: #222;
+  padding: 20px; }
+
+a img {
+  width: 250px;
+  height: 200px;
+  border: solid 8px white;
+  z-index: 10;
+  text-align: center;
+  margin: 10px 7px; }
+
+#wedFAQ {
+  margin: 50px 0;
+  border: solid 1px grey;
+  box-shadow: 0 0 1px grey;
+  border-radius: 3px; }
+  #wedFAQ h1 {
+    text-align: center;
+    font-style: "Droid Sans", sans-serif;
+    color: #333; }
+  #wedFAQ p {
+    font-family: "Droid Sans", sans-serif; }
+
+.faqContainer {
+  background-color: #FFFFFF;
+  padding: 10px;
+  margin-bottom: 20px; }
+  .faqContainer .question, .faqContainer .answer {
+    background-color: #D0CEE3;
+    padding: 8px;
+    margin: 0;
+    border-radius: 5px;
+    cursor: pointer; }
+  .faqContainer .answer {
+    background-color: #FFFFFF;
+    border-radius: 0 0 5px 5px;
+    display: none; }
+    .faqContainer .answer ul {
+      font-weight: bold; }
+      .faqContainer .answer ul li {
+        font-weight: normal; }
+
+.qaHolder {
+  border: solid 1px #333;
+  border-radius: 5px;
+  margin-bottom: 10px; }
+
+.ocean {
+  background: url(img/oceanTexture.png); }
+
+#aboutEscapeBG {
+  height: 100vh;
+  position: relative;
+  top: -70px;
+  left: 0;
+  right: 0;
+  background: url("../img/escape2.jpg") center center no-repeat;
+  background-size: cover;
+  border-bottom: solid 10px white; }
+
+.more {
+  display: block;
+  color: white;
+  font-family: "Droid Sans", sans-serif;
+  background-color: #60cfe6;
+  font-weight: 500;
+  padding: 5px 10px;
+  font-size: 200%;
+  margin-top: 120%;
+  text-align: center;
+  border: solid 4px white; }
+
+.more:hover {
+  text-decoration: none;
+  color: white; }
+
+#aboutEscape h1 {
+  font-family: "Droid Sans", sans-serif;
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center; }
+
+.cruise1 {
+  background-color: #FFFFFF;
+  border: solid 2px #00777F;
+  padding: 30px 20px;
+  width: 100%;
+  font-family: "Droid Sans", sans-serif; }
+  .cruise1 h3 {
+    font-family: "Droid Sans", sans-serif;
+    color: #00777F;
+    line-height: 1.5; }
+
+h3.sailingWhen {
+  text-align: center; }
+
+.quote {
+  font-family: "Droid Sans", sans-serif;
+  color: #333;
+  font-size: 150%;
+  line-height: 1.5;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  margin-top: 20px; }
+
+.author {
+  display: inline-block;
+  float: right;
+  padding-top: 10px;
+  position: relative;
+  right: 30px;
+  font-family: "Droid Sans", sans-serif; }
+
+.entertainment {
+  margin-bottom: 10px; }
+
+#packList ul li {
+  margin-bottom: 5px;
+  font-family: "Droid Sans", sans-serif;
+  color: #333; }
+
+.bor-left {
+  border-left: 1px solid #333;
+  padding-left: 20px; }
+
+footer {
+  font-family: "Droid Sans", sans-serif;
+  color: #00777F;
+  padding: 20px; }
+  footer a {
+    color: #00777F; }
+    footer a .sm {
+      padding: 5px; }
+
+#tabsList {
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+  #tabsList > .allTabs {
+    list-style-position: inside;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0; }
+    #tabsList > .allTabs > .tab {
+      display: block;
+      float: left;
+      background-color: #E0E4EF;
+      border: 1px solid grey;
+      border-radius: 5px 5px 0 0;
+      padding: 10px; }
+      #tabsList > .allTabs > .tab.active {
+        background-color: #D0CEE3; }
+        #tabsList > .allTabs > .tab.active a {
+          font-weight: bold; }
+      #tabsList > .allTabs > .tab a {
+        text-decoration: none;
+        color: #333;
+        width: 100%; }
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  background-color: #E0E4EF; }
+
+#allPanels .panel {
+  display: none; }
+
+.panel.active {
+  display: block;
+  background-color: #D0CEE3;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden; }
+  .panel.active p, .panel.active a, .panel.active li {
+    font-size: 1.2em; }
+  .panel.active .floater {
+    float: left;
+    width: 49%;
+    padding: 5px; }
+    .panel.active .floater > h2:first-child {
+      margin-top: 0 !important; }
+
+#registry {
+  min-height: 100vh;
+  background-image: url("../img/wedding-gifts.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #registry footer {
+    position: fixed;
+    bottom: 0; }
+
+.giftPic h1.header {
+  font-family: "Lobster", cursive;
+  text-align: center; }
+
+.giftPic p {
+  font-family: "Droid Sans", sans-serif;
+  font-size: 1.2em;
+  font-weight: 600; }
+
+.giftPic .vendorList {
+  background-color: #D0CEE3;
+  padding: 20px; }
+  .giftPic .vendorList > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    list-style-position: inside;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0; }
+    .giftPic .vendorList > ul li {
+      padding: 20px; }
+      .giftPic .vendorList > ul li img {
+        border-radius: 20px;
+        height: 11em; }
+
+/*# sourceMappingURL=styles.css.map */
