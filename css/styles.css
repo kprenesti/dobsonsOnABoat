@@ -99,7 +99,7 @@ body {
 .toTop {
   display: block;
   position: absolute;
-  bottom: 1px;
+  bottom: 0;
   right: 2%;
   color: #333;
   margin-top: 10px; }
@@ -134,11 +134,6 @@ h1.names {
   font-family: "Lobster", cursive;
   color: #00777F; }
 
-#countdown {
-  position: relative;
-  top: 20vh;
-  right: 1%; }
-
 .moreBtn {
   position: relative;
   top: 50vh;
@@ -155,7 +150,8 @@ h1.names {
 
 #countdown {
   position: relative;
-  top: 22vh; }
+  top: 35vh;
+  right: 1%; }
 
 #countdown .timeBubble {
   display: flex;
@@ -389,7 +385,7 @@ footer {
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
   background-color: #E0E4EF; }
 
-.panel {
+#allPanels .panel {
   display: none; }
 
 .panel.active {
