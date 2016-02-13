@@ -390,20 +390,20 @@ footer {
 #allPanels .panel {
   display: none; }
 
-.panel.active {
+#allPanels .panel.active {
   display: block;
   background-color: #D0CEE3;
   padding: 20px;
   border: 1px solid #333;
   border-radius: 0 0 4px 4px;
   overflow: hidden; }
-  .panel.active p, .panel.active a, .panel.active li {
+  #allPanels .panel.active p, #allPanels .panel.active a, #allPanels .panel.active li {
     font-size: 1.2em; }
-  .panel.active .floater {
+  #allPanels .panel.active .floater {
     float: left;
     width: 49%;
     padding: 5px; }
-    .panel.active .floater > h2:first-child {
+    #allPanels .panel.active .floater > h2:first-child {
       margin-top: 0 !important; }
 
 #registry {
