@@ -391,7 +391,7 @@ footer {
   display: none; }
 
 #allPanels .panel.active {
-  display: block;
+  display: block !important;
   background-color: #D0CEE3;
   padding: 20px;
   border: 1px solid #333;
