@@ -359,6 +359,47 @@ footer {
     footer a .sm {
       padding: 5px; }
 
+#tabsList {
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+  #tabsList > .allTabs {
+    list-style-position: inside;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0; }
+    #tabsList > .allTabs > .tab {
+      display: block;
+      float: left;
+      background-color: #E0E4EF;
+      border: 1px solid grey;
+      border-radius: 5px 5px 0 0;
+      padding: 10px; }
+      #tabsList > .allTabs > .tab.active {
+        background-color: #D0CEE3; }
+        #tabsList > .allTabs > .tab.active a {
+          font-weight: bold; }
+      #tabsList > .allTabs > .tab a {
+        text-decoration: none;
+        color: #333;
+        width: 100%; }
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  background-color: #E0E4EF; }
+
+.panel {
+  display: none; }
+
+.panel.active {
+  display: block;
+  background-color: #D0CEE3;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 0 0 4px 4px; }
+  .panel.active p {
+    font-size: 1.2em; }
+
 #registry {
   max-height: 100vh; }
 

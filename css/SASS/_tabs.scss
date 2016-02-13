@@ -1,0 +1,51 @@
+#tabsList {
+width: 100%;
+padding: 0;
+margin: 0;
+  > .allTabs {
+    list-style-position: inside;
+    list-style-type: none;
+    overflow:hidden;
+    padding: 0;
+    margin: 0;
+    > .tab{
+      display: block;
+      float: left;
+      background-color: $whitePurple;
+      border: 1px solid grey;
+      border-radius: 5px 5px 0 0;
+      padding: 10px;
+        &.active {
+          background-color: $lightPurple;
+          a {
+            font-weight: bold;
+          }
+        }
+        a {
+          text-decoration: none;
+          color: $contColor;
+          width: 100%;
+      }
+    }
+  }
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  background-color: $whitePurple;
+}
+
+//PANELS
+
+.panel {
+  display: none;
+}
+
+.panel.active {
+  display: block;
+  background-color: $lightPurple;
+  padding: 20px;
+  border: 1px solid $contColor;
+  border-radius: 0 0 4px 4px;
+  p {
+    font-size: 1.2em;
+  }
+}
