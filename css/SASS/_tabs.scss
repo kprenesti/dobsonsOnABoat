@@ -45,7 +45,16 @@ margin: 0;
   padding: 20px;
   border: 1px solid $contColor;
   border-radius: 0 0 4px 4px;
-  p {
+  overflow: hidden;
+  p, a, li {
     font-size: 1.2em;
+  }
+  .floater {
+    float: left;
+    width: 49%;
+    padding: 5px;
+    > h2:first-child {
+      margin-top: 0 !important;
+    }
   }
 }

@@ -396,9 +396,16 @@ footer {
   background-color: #D0CEE3;
   padding: 20px;
   border: 1px solid #333;
-  border-radius: 0 0 4px 4px; }
-  .panel.active p {
+  border-radius: 0 0 4px 4px;
+  overflow: hidden; }
+  .panel.active p, .panel.active a, .panel.active li {
     font-size: 1.2em; }
+  .panel.active .floater {
+    float: left;
+    width: 49%;
+    padding: 5px; }
+    .panel.active .floater > h2:first-child {
+      margin-top: 0 !important; }
 
 #registry {
   max-height: 100vh; }
