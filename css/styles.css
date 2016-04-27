@@ -403,6 +403,12 @@ footer {
     float: left;
     width: 49%;
     padding: 5px; }
+    @media(max-width 550px){
+      #allPanels .panel.active .floater {
+        float: none;
+        width: 100%;
+        padding: 5px; }
+    }
     #allPanels .panel.active .floater > h2:first-child {
       margin-top: 0 !important; }
 
